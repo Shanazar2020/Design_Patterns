@@ -3,7 +3,7 @@ package main.java.EventSubscription.listeners;
 import java.io.File;
 
 public class LogFileListener implements Listener {
-        private String log;
+        private final String log;
 
         public LogFileListener(String log) {
             this.log = log;

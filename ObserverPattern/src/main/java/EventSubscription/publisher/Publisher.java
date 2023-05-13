@@ -10,9 +10,9 @@ import java.util.Map;
 public interface Publisher {
     Map<String, ArrayList<Listener>> listeners = new HashMap<>();
 
-    public void subscribe(String eventType, Listener listener);
+    void subscribe(String eventType, Listener listener);
 
-    public void unsubscribe(String eventType, Listener listener);
+    void unsubscribe(String eventType, Listener listener);
 
-    public void notify(String eventType,  File file);
+    void notify(String eventType,  File file);
 }

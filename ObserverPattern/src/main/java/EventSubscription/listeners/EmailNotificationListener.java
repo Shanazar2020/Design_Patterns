@@ -3,7 +3,7 @@ package main.java.EventSubscription.listeners;
 import java.io.File;
 
 public class EmailNotificationListener implements Listener {
-    private String email;
+    private final String email;
     public EmailNotificationListener(String email) {
         this.email = email;
     }
